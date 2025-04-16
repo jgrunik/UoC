@@ -1,5 +1,6 @@
-Units/
-src/__pycache__/
-.vscode/
 !.vscode/extensions.json
+.venv/
+.vscode/
+src/__pycache__/
 Templates/VU/
+Units/
