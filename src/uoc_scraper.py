@@ -53,7 +53,7 @@ class UoCData:
         elements = []
         for row in rows:
             element = row.xpath('./a:td[1]/a:p/text()', namespaces=namespaces)[0]
-            element_index, element_title = str.split(element, '. ', 1)
+            element_index, element_title = re.split(r'\.\s*', element, 1)
             performance_criteria = row.xpath('./a:td[2]/a:p/text()', namespaces=namespaces)
             
             pc_items = []
