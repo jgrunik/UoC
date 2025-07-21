@@ -10,15 +10,7 @@ mcp = FastMCP()
 @mcp.tool()
 def get_unit_data(unit_code: str) -> dict:
     """Scrapes and returns all data for a given Unit of Competency."""
-    try:
-        scraper = UoCData(unit_code)
-        return scraper.extract_all()
-    except ValueError as e:
-        # It's better to let the server handle exceptions.
-        # The client will receive a proper error response.
-        raise
-    except Exception as e:
-        raise
+    return UoCData(unit_code).extract_all()
 
 @mcp.tool()
 def validate_unit_code(unit_code: str) -> bool:
