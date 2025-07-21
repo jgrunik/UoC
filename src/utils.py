@@ -57,7 +57,3 @@ def get_unit_xml_url(unit_code: str) -> str:
     """Get the URL of the XML file for a unit code from training.gov.au"""
     industry_code = unit_code[:3]
     return f"https://training.gov.au/assets/{industry_code}/{unit_code}_Complete_R1.xml"
-
-class StopExecution(Exception):
-    """Exception used to cleanly stop execution"""
-    pass

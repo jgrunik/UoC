@@ -5,7 +5,7 @@ Command line interface for the UoC Creator
 import argparse
 import sys
 
-from src import StopExecution, UoCCreator
+from src import UoCCreator
 
 
 def main():
@@ -51,9 +51,6 @@ def main():
         parser.print_help()
         return 1
         
-    except StopExecution:
-        print("Operation cancelled by user")
-        return 1
     except Exception as e:
         print(f"Error: {str(e)}", file=sys.stderr)
         return 1

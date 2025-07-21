@@ -10,8 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 from requests_ntlm import HttpNtlmAuth
 
-from .utils import (Paths, StopExecution, base_url, template_titles,
-                    templates_url)
+from .utils import Paths, base_url, template_titles, templates_url
 
 
 class TemplatesScraper:

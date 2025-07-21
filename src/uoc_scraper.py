@@ -8,8 +8,7 @@ import re
 import requests
 from lxml import etree
 
-from .utils import (StopExecution, get_unit_xml_url, namespaces,
-                    unit_path_from_code)
+from .utils import get_unit_xml_url, namespaces, unit_path_from_code
 
 
 class UoCData:

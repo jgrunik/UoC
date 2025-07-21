@@ -8,7 +8,7 @@ import tempfile
 from docx import Document
 from docxtpl import DocxTemplate
 
-from .utils import FileNames, Paths, StopExecution, unit_path_from_code
+from .utils import FileNames, Paths, unit_path_from_code
 
 
 class TemplatePreparer:
